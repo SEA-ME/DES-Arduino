@@ -1,18 +1,19 @@
-# Project XX: Project Title
+# Project 02: Arduino
 
 
-# Description
-Short description of the project
+## Description
+Interfacing MCP2515 CAN BUS Module with Arduino
 
 
 # Duration
-Duration in hours
+40 hours / 1 week
 
 
 # Skills
-* Skill 1
-* Skill 2
-* Skill 3
+* General Electronics
+* Electronics Circuits
+* Programming
+* In-Vehicle communication
 
 
 # Attachments
@@ -21,16 +22,15 @@ Duration in hours
 
 
 # Forewords
-Interesting facts / stories to get people interested in this project.
+Today any average car consists of around 60 to 100 sensor units in it for sensing and exchanging information. With car manufactures constantly making their car smarter with features like Autonomous driving, Airbag system, Tire Pressure monitoring, Cruise control system etc. this number is only expected to go high. Unlike other sensors, these sensors process critical information and hence the data from these sensors should be communicated using standard automotive communication protocols. For example, cruise control system data like speed, throttle position etc are vital values which are sent to Electronic Control Unit (ECU) to decide the acceleration level of the car, a miscommunication or loss of data here could lead to critical failures. Hence unlike standard communication protocols like UART, SPI or I2C, designers use reliable automobile communication protocols like LIN, CAN, FlexRay etc.
 
 
 # Introduction
-Detail introduction of the project.
+Out of all the available protocols CAN is more predominantly used and popular. You will also exchange data between two Arduinos using CAN communication. Sounds interesting right! So, let’s get started.
 
 
 # Objectives
-* Goal 1
-* Goal 2
+* Send humidity & temperature (DHT11) sensor data from Arduino Nano to Arduino Uno via CAN bus module MCP2515 (a high speed CAN transceiver).
 
 
 # Common Instructions
@@ -47,13 +47,14 @@ Safety first! Electronics is a potentially dangerous hobby. Any circuit that wor
 
 
 # Mandatory part
-* Mandatory 1
-* Mandatory 2
+* You must read humidity and temperature sensor data using Arduino Nano.
+* You must transmit humidity and temperature sensor data over CAN.
+* You must show humidity and temperature on some mini LCD display connected to Arduino Uno.
+* You must show the working of your setup. (May be try playing with room temperature?)
 
 
 # Bonus part
-* Bonus 1
-* Bonus 2
+* Find a way to place the CAN Bus Module on your PiRacer. (Hint: 3D-Printer comes very handy to create customized parts)
 
 
 # Submission & Peer evaluation
