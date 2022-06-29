@@ -45,6 +45,41 @@ Safety first! Electronics is a potentially dangerous hobby. Any circuit that wor
 * Always work in a well-ventilated space.
 * Have safety equipment such as a fire extinguisher, a first-aid kit, and a phone nearby.
 
+### Schematics
+#### CAM Bus Circuit	
+##### For Transmitter (Arduino 1)
+
+* MCP2515 Module / DHT Sensor -> Arduino Nano
+* MPC2515 – VCC -> +5V
+* MPC2515 – GND -> GND
+* MPC2515 – CS -> D10 (SPI_SS)
+* MPC2515 – SO -> D12 (SPI_MISO)
+* MPC2515 - S I -> D11 (SPI_MOSI)
+* MPC2515­ – SCK -> D13 (SPI_SCK)
+* MPC2515 – INT -> D2
+* DHT11 – VCC -> +5V
+* DHT11 – GND -> GND
+* DHT11­ – OUT -> A0
+
+##### For Receiver (Arduino 2)
+
+* MCP2515 Module -> Arduino Uno
+* VCC -> +5V
+* GND -> GND
+* CS -> 10 (SPI_SS)
+* SO -> 12 (SPI_MISO)
+* SI -> 11 (SPI_MOSI)
+* SCK -> 13 (SPI_SCK)
+* INT -> 2
+
+##### Between two MCP2515
+
+* MCP2515 on Arduino Nano (Arduino 1) -> MCP2515 on Arduino Nano (Arduino 2)
+* H -> H
+* L -> L
+
+![Arduino-CAN-1.jpg](/docs/assets/images/Arduino-CAN-1.jpg)
+
 
 # Mandatory part
 * You must read humidity and temperature sensor data using Arduino Nano.
