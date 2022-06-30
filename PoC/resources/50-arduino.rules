@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="Arduino*", MODE="0666", SYMLINK+="arduino%n"
