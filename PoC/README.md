@@ -74,3 +74,5 @@ Send can frames:
 * https://elinux.org/CAN_Bus
 * https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/
 * https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/
+
+## PoC provided by Torsten Wylegala (twyleg)
